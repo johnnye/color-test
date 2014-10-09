@@ -19,6 +19,8 @@
 		B318261518475D0B0043E9BA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B31825F118475D0A0043E9BA /* Cocoa.framework */; };
 		B318261D18475D0B0043E9BA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B318261B18475D0B0043E9BA /* InfoPlist.strings */; };
 		B318261F18475D0B0043E9BA /* color_testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B318261E18475D0B0043E9BA /* color_testTests.m */; };
+		B318262D18475E010043E9BA /* NIMColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B318262C18475E010043E9BA /* NIMColor.m */; };
+		B318262F184768080043E9BA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B318262E184768080043E9BA /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,9 @@
 		B318261A18475D0B0043E9BA /* color-testTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "color-testTests-Info.plist"; sourceTree = "<group>"; };
 		B318261C18475D0B0043E9BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B318261E18475D0B0043E9BA /* color_testTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = color_testTests.m; sourceTree = "<group>"; };
+		B318262B18475E010043E9BA /* NIMColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMColor.h; sourceTree = "<group>"; };
+		B318262C18475E010043E9BA /* NIMColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMColor.m; sourceTree = "<group>"; };
+		B318262E184768080043E9BA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B318262F184768080043E9BA /* QuartzCore.framework in Frameworks */,
 				B31825F218475D0A0043E9BA /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,6 +103,7 @@
 		B31825F018475D0A0043E9BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B318262E184768080043E9BA /* QuartzCore.framework */,
 				B31825F118475D0A0043E9BA /* Cocoa.framework */,
 				B318261318475D0B0043E9BA /* XCTest.framework */,
 				B31825F318475D0A0043E9BA /* Other Frameworks */,
@@ -121,8 +128,9 @@
 				B318260418475D0A0043E9BA /* NIMAppDelegate.m */,
 				B318260618475D0A0043E9BA /* MainMenu.xib */,
 				B318260C18475D0A0043E9BA /* Images.xcassets */,
-				B318260918475D0A0043E9BA /* color_test.xcdatamodeld */,
 				B31825F818475D0A0043E9BA /* Supporting Files */,
+				B318262B18475E010043E9BA /* NIMColor.h */,
+				B318262C18475E010043E9BA /* NIMColor.m */,
 			);
 			path = "color-test";
 			sourceTree = "<group>";
@@ -130,6 +138,7 @@
 		B31825F818475D0A0043E9BA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B318260918475D0A0043E9BA /* color_test.xcdatamodeld */,
 				B31825F918475D0A0043E9BA /* color-test-Info.plist */,
 				B31825FA18475D0A0043E9BA /* InfoPlist.strings */,
 				B31825FD18475D0A0043E9BA /* main.m */,
@@ -256,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B318262D18475E010043E9BA /* NIMColor.m in Sources */,
 				B31825FE18475D0A0043E9BA /* main.m in Sources */,
 				B318260B18475D0A0043E9BA /* color_test.xcdatamodeld in Sources */,
 				B318260518475D0A0043E9BA /* NIMAppDelegate.m in Sources */,
@@ -469,6 +479,7 @@
 				B318262418475D0B0043E9BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B318262518475D0B0043E9BA /* Build configuration list for PBXNativeTarget "color-testTests" */ = {
 			isa = XCConfigurationList;
@@ -477,6 +488,7 @@
 				B318262718475D0B0043E9BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

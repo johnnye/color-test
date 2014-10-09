@@ -7,7 +7,7 @@
 //
 
 #import "NIMAppDelegate.h"
-
+#import <QuartzCore/QuartzCore.h>
 @implementation NIMAppDelegate
 
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
@@ -178,6 +178,25 @@
     }
 
     return NSTerminateNow;
+}
+-(IBAction)newColor:(id)sender{
+    if (color == nil) {
+        color = [[NIMColor alloc]init];
+    }
+    CALayer *viewLayer = [CALayer layer];
+    [viewLayer setBackgroundColor:[[color newRandom]CGColor]];
+    [viewLayer setCornerRadius:5.0f];
+    
+    [self.colorView setWantsLayer:YES];
+    [self.colorView setLayer:viewLayer];
+    
+    NSMutableString *string = [[NSMutableString alloc]init];
+    for (int i =0; i<[color.existingColorHues count];i++) {
+        if ([[color.existingColorHues objectAtIndex:i]boolValue] == TRUE) {
+            [string appendFormat:@"\n %i", i ];
+        }
+    }
+    [self.listOfHues setString:string];
 }
 
 @end
